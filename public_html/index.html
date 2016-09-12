@@ -20,9 +20,9 @@ and open the template in the editor.
         
         <label>K<sub>s</sub> = </label><input type="text" id="constant"/>
         <br/><br/>
-        <label>m= </label><input type="text" id="cation_coefficient"/>
+        <label>m = </label><input type="text" id="cation_coefficient"/>
         <br/><br/>
-        <label>x= </label><input type="text" id="anion_coefficient"/>
+        <label>x = </label><input type="text" id="anion_coefficient"/>
         <br/><br/>
         <!--<label>Cation excess: C<sub>M</sub> = </label><input type="text" id="cation_concentration"/> molL<sup>-1</sup>
         <br/><br/>-->
@@ -89,7 +89,7 @@ and open the template in the editor.
                 
                 //var START = 0.0;
                 var INCREMENT = 0.001; //const
-                var END = 0.1; //const
+                var END = 0.05; //const
                 for (var excess = INCREMENT; excess <= END; excess += INCREMENT) {
                     cation_excess_data.push([excess, solubilityCalcSuccAprox(ks, x, m, excess)]);
                     anion_excess_data.push([excess, solubilityCalcSuccAprox(ks, m, x, excess)]);

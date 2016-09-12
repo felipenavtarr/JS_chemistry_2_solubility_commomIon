@@ -12,7 +12,7 @@ function solubilityCalcSuccAprox(ks, coef_other, coef_excess, excess)
         s = Math.pow(d/Math.pow(excess + s, coef_excess), root_index);
         difference = Math.abs(s - anterior);
 
-        //console.log(s);
+        console.log(s);
     } while (difference > limit);
     
     return s;
